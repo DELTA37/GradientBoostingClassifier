@@ -3,7 +3,7 @@ from sklearn.base import BaseEstimator
 from sklearn.model_selection import train_test_split
 
 class Blending(BaseEstimator):
-    def __init__(self, metamodel=None, models=None, test_size=0.25):
+    def __init__(self, metamodel=None, models=None, test_size=0.5):
         super(Blending, self).__init__()
         self.models = models
         self.metamodel = metamodel
